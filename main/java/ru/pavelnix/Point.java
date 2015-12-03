@@ -1,19 +1,38 @@
 package ru.pavelnix;
 
+/**
+ * Класс Point - служит для хранения координат точки на плоскости
+ */
 public class Point {
-    private final float coordinateX;
-    private final float coordinateY;
+    private final float x;
+    private final float y;
 
-    public Point(float coordinateX, float coordinateY) {
-        this.coordinateX = coordinateX;
-        this.coordinateY = coordinateY;
+    /**
+     * Конструктор класса
+     *
+     * @param x - координата по оси Х
+     * @param y - координата по оси Y
+     */
+    public Point(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
 
-    public float getCoordinateX() {
-        return coordinateX;
+    /**
+     * Геттер
+     *
+     * @return - возвращает коодинату по оси X
+     */
+    public float getX() {
+        return x;
     }
 
-    public float getCoordinateY() {
-        return coordinateY;
+    /**
+     * Геттер
+     *
+     * @return - возвращает коодинату по оси Y
+     */
+    public float getY() {
+        return y;
     }
 }
