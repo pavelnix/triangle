@@ -1,13 +1,17 @@
 package ru.pavelnix;
 
 /**
- * Класс треугольника
+ * Класс описывающий треугольник
+ * Class describing a triangle
  */
 public class Triangle {
     /**
-     * vertexA - первая вершина трегольника
-     * vertexB - вторая вершина трегольника
-     * vertexC - третья вершина трегольника
+     * vertexA - первая вершина треугольника
+     *          the first vertex of the triangle
+     * vertexB - вторая вершина треугольника
+     *          the second vertex of the triangle
+     * vertexC - третья вершина треугольника
+     *          the third vertex of the triangle
      */
     private Point vertexA;
     private Point vertexB;
@@ -15,10 +19,14 @@ public class Triangle {
 
     /**
      * Конструктор треугольника
+     * The class constructor
      *
-     * @param vertexA - первая вершина трегольника
-     * @param vertexB - вторая вершина трегольника
-     * @param vertexC - третья вершина трегольника
+     * @param vertexA - первая вершина треугольника
+     *          the first vertex of the triangle
+     * @param vertexB - вторая вершина треугольника
+     *          the second vertex of the triangle
+     * @param vertexC - третья вершина треугольника
+     *          the third vertex of the triangle
      */
     public Triangle(Point vertexA, Point vertexB, Point vertexC) {
         this.vertexA = vertexA;
@@ -28,10 +36,12 @@ public class Triangle {
 
     /**
      * Метод, который считает площадь треугольника
+     * A method that calculates the area of ​​a triangle
      *
      * @return - площадь треугольника
+     * return area of a triangle
      */
-    public float square() {
+    public float area() {
 
         return 1f / 2 * Math.abs((vertexB.getX() - vertexA.getX()) * (vertexC.getY() - vertexA.getY()) -
                 (vertexC.getX() - vertexA.getX()) * (vertexB.getY() - vertexA.getY()));
